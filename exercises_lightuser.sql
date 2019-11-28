@@ -61,7 +61,7 @@ FROM [Sales].[CurrencyRate];
 -- A.		Please write your query below.
 
 
-/* Question 6: Creating a new conditional column
+/* Question 6: Creating a new conditional column */
 -- Q.		Using the [Person].[CountryRegion] table, can you classify countries that you think are military regimes under a new column, [MilitaryRegimeFlag]?
 -- A.		Please write your query below.
 
@@ -76,7 +76,7 @@ FROM [Sales].[CurrencyRate];
 --				- Casting columns to the right datatype
 --				- Using conditional if/else (`CASE WHEN`) statements
 
---			You will also need to search how to concatenate columns and may possibly need to use the `LENGTH()` function.
+--			You will also need to search how to concatenate columns and may possibly need to use the `LEN()` function.
 
 -- Note:	This is actually quite a difficult exercise.
 -- A.		Please write your query below here.
