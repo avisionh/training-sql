@@ -14,7 +14,7 @@ USE [HEFE-AN-DEV];
 -- A.		Please write your query below here.
 
 
-/* Question 1: UNION-ing tables together */
+/* Question 3: UNION-ing tables together */
 -- Q.		Based on what we covered so far, can you think of an alternative way of writing the below query from (6.)?
 SELECT 
     [AddressID]
@@ -36,13 +36,13 @@ WHERE [City] = 'New York';
 -- A.		Please write your query below here.
 
 
-/* Question 2: CAST-ing columns to a specified datatype */
+/* Question 4: CAST-ing columns to a specified datatype */
 -- Q.		Using the GETDATE() function to fetch today's date and time, can you cast this to only get the date instead?
 -- Note:	A `SELECT` statement need not always end with `FROM <table_name>`
 -- A.		Please write your query below here.
 
 
-/* Question 3: Avoiding long and winding CASE WHEN statements */
+/* Question 5: Avoiding long and winding CASE WHEN statements */
 -- Q.		Using the `[Sales].[Currency]` as your look-up table, find a way to do what you aim to do below in (7.2) but without using `CASE WHEN` statements. 
 SELECT 
     [FromCurrencyCode]
@@ -60,8 +60,13 @@ FROM [Sales].[CurrencyRate];
 -- A.		Please write your query below.
 
 
-/* Question 4: CAST-ing columns so they can be concatenated */
--- Q.		Using the `[ExpMonth]` and `[ExpYear]` columns in [Sales].[CreditCard], 
+/* Question 6: Creating a new conditional column
+-- Q.		Using the [Person].[CountryRegion] table, can you classify countries that you think are military regimes under a new column, [MilitaryRegimeFlag]?
+-- A.		Please write your query below.
+
+
+/* Question 7: CAST-ing columns so they can be concatenated */
+-- Q.		Using the [Sales].[CreditCard] table and the `[ExpMonth]` and `[ExpYear]` columns, 
 --			and assuming all expriation dates start on the first of each month, *e.g. 2018/05/01*, 
 --			can you create a new column that has the full date of expiry, ensuring that this is of the date datatype?
 
