@@ -5,7 +5,8 @@
 USE [HEFE-AN-DEV];
 
 /* Question 1: FILTER, GROUP BY and COUNT */
--- Q.		Based on the material up to (4.), can you count the number of records for each city, ordering the results by city?
+-- Q.		Using the [Person].[Address] table and based on the material up to (4.), can you count the number of records for each city
+--			in the state province ID of 11, ordering the results by city?
 -- A.		Please write your query below here.
 
 
