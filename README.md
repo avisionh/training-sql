@@ -20,14 +20,13 @@ They are designed and organised according to level of usage:
     + Using conditional if-else statements
 
 - **Medium-user 🥈:** For those performing more advanced querying operations to retrieve heavily wrangled data from SQL. Topics covered are:
-    + Data matrix/tidy data principles
-    + Advanced filtering of data
     + Differences between Tables and Views
-    + Creating three types of temporary tables for storing data
-    + Subquerying the data
-    + Ordering records according to their groups by a counter
+    + Three types of temporary tables for storing data
+    + Subquerying the data  
+    + Ranking groups of variables by a counter
     + Pivoting data from long to wide shape
     + Unpivoting data from wide to long shape
+    + Data matrix/tidy data principles
 
 - **Heavy-user 🥇:** For those perforrming data management roles to store objects permanently in SQL
     + Dynmaic SQl querying
