@@ -29,7 +29,7 @@ They are designed and organised according to level of usage:
     + Data matrix/tidy data principles
 
 - **Heavy-user 🥇:** For those perforrming data management roles to store objects permanently in SQL
-    + Dynmaic SQl querying
+    + Dynmaic SQL querying
     + Creating and updating tables
     + Importing data into SQL
     + Indexing columns to improve querying speeds
