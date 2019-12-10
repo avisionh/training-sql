@@ -55,7 +55,7 @@ SET @cols =
 );
 
 -- remove columns we don't want to unpivot from list of variables
-SET @cols = REPLACE(@cols, ',' + @columns_keep, '')
+SET @cols = REPLACE(@cols, ',' + @columns_keep, '');
 
 -- dynamic SQL unpivot
 set @query = 
@@ -68,8 +68,8 @@ set @query =
 	) AS x
 	UNPIVOT
     (' +
-		@column_measure + '
-        FOR ' + @column_value + ' IN (' + @cols + ')
+		@column_value + '
+        FOR ' + @column_measure + ' IN (' + @cols + ')
     ) AS p 
 ';
 
