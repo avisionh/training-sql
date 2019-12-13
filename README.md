@@ -3,9 +3,14 @@ Welcome to this repository of training materials for querying in SQL.
 
 The training materials will be written in **T-SQL** (Transact-SQL). 📜
 
+## Who are these training materials for? 👔
+These training materials are designed with the enterprise/business user in mind.
+
+In particular, it is created from this perspective to enable users to better choose the material they need according to what they will use SQL for.
+
 ## How are the training materials organised? 🗃
 
-They are designed and organised according to level of usage:
+They are organised according to level of usage:
 - **Light-user 🥉:** For those performing basic querying operations to retrieve lightly-wrangled data from SQL. They will have **READ-ONLY** or higher access to the database. Topics covered are:
     + Basic relational database theory
     + Basic query to retrieve all records/data from a table
