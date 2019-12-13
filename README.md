@@ -6,7 +6,7 @@ The training materials will be written in **T-SQL** (Transact-SQL). 📜
 ## How are the training materials organised? 🗃
 
 They are designed and organised according to level of usage:
-- **Light-user 🥉:** For those performing basic querying operations to retrieve lightly-wrangled data from SQL. Topics covered are:
+- **Light-user 🥉:** For those performing basic querying operations to retrieve lightly-wrangled data from SQL. They will have **READ-ONLY** or higher access to the database. Topics covered are:
     + Basic relational database theory
     + Basic query to retrieve all records/data from a table
     + Choosing unique records in a column
@@ -19,7 +19,7 @@ They are designed and organised according to level of usage:
     + Changing columns to a different data type
     + Using conditional if-else statements
 
-- **Medium-user 🥈:** For those performing more advanced querying operations to retrieve heavily wrangled data from SQL. Topics covered are:
+- **Medium-user 🥈:** For those performing more advanced querying operations to retrieve heavily wrangled data from SQL. They will have **READ-ONLY** or higher access to the database. Topics covered are:
     + Differences between Tables and Views
     + Three types of temporary tables for storing data
     + Subquerying the data  
@@ -28,13 +28,15 @@ They are designed and organised according to level of usage:
     + Unpivoting data from wide to long shape
     + Data matrix/tidy data principles
 
-- **Heavy-user 🥇:** For those perforrming data management roles to store objects permanently in SQL
-    + Dynmaic SQl querying
+- **Heavy-user 🥇:** For those perforrming data management roles to store objects permanently in SQL. They will have **READ-WRITE** or higher access to the database. Topics covered are:
+    + Dynmaic SQL querying
+    + What makes a well-governed database?
     + Creating and updating tables
     + Importing data into SQL
     + Indexing columns to improve querying speeds
     + Adding constraints to columns to restrict entries that can go inside it
     + Using stored procedures and functions to do more bespoke operations
+    + Database triggers for tracking activity
     + Version-controlling databases 
 
 ## Is there anything I need alongside the files? 👀🧠
