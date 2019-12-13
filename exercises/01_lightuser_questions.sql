@@ -2,7 +2,7 @@
 -- DESCRIPTION: The purpose of this script is to provide exercises for the trainee to practice what 
 --				was covered in the accompanying `training_sql_lightuser.ipynb` notebook.
 
-USE [HEFE-AN-DEV];
+USE [AdventureWorks];
 
 /* Question 1: FILTER, GROUP BY and COUNT */
 -- Q.		Using the [Person].[Address] table and based on the material up to (4.), can you count the number of records for each city
@@ -79,4 +79,20 @@ FROM [Sales].[CurrencyRate];
 --			You will also need to search how to concatenate columns and may possibly need to use the `LEN()` function.
 
 -- Note:	This is actually quite a difficult exercise.
+-- A.		Please write your query below here.
+
+
+/* Question 8: Returning first non-NULL entry across multiple columns */
+-- Q.		Using the COALESCE() function, can you rewrite the below query?
+-- Note:	This exercise shows you a shorthand way of creating a new column that 
+--			takes the first non-NULL entry across several existing columns.
+SELECT [Name]
+    ,[ProductNumber]
+    ,[ProductSubcategoryID]
+    ,[ProductModelID]
+    ,[ProductId] = CASE
+        WHEN [ProductSubcategoryID] IS NULL THEN [ProductModelID]
+        ELSE [ProductSubcategoryID]
+        END
+FROM [Production].[Product];
 -- A.		Please write your query below here.
